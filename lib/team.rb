@@ -1,14 +1,13 @@
 require_relative "cool_faker"
 
 module CoolFaker
-  class Character < Base
+  class Team < Base
 
-    def self.name
+    def self.slogan
       data = self.parse(dir + '/cool_faker/data.yml')
-      data['names'][data['names'].keys.sample].sample.to_s
+      data['quotes'].sample
     end
-
-
 
   end
 end
+

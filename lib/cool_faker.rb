@@ -20,3 +20,4 @@ module CoolFaker
 end
 
 require 'name'
+require 'team'
