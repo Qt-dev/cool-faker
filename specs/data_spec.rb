@@ -9,7 +9,7 @@ describe "The data file" do
       File.exist?(FILE).should be_true
     end
 
-    it "should be openable" do
+    it "should be loadable" do
       File.open(FILE).should_not raise_error
     end
 
