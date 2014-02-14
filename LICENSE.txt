@@ -1,4 +1,4 @@
-Copyright (c) 2014 Nicholas Cu & Quentin Devauchelle
+Copyright (c) 2014 Nicholas Cu & Quentin Devauchelle & Armando Reed & Jamie McKenzie
 
 MIT License
 
