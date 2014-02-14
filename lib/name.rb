@@ -4,8 +4,8 @@ module CoolFaker
   class Character < Base
 
     def self.name
-      movies = self.parse(dir + '/cool_faker/data.yml')
-      movies['names'][movies['names'].keys.sample].sample.to_s
+      data = self.parse(dir + '/cool_faker/data.yml')
+      data['names'][data['names'].keys.sample].sample.to_s
     end
 
 
