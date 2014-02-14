@@ -9,7 +9,4 @@ module CoolFaker
     end
 
   end
-
 end
-
-p CoolFaker::Character.name
