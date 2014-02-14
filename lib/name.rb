@@ -1,9 +1,9 @@
 require_relative "cool_faker"
 
 module CoolFaker
-  class Name < Base
+  class Character < Base
 
-    def get_name(file)
+    def name(file)
       movies = self.class.parse(file)
       movies[movies.keys.sample].sample
     end
@@ -11,8 +11,8 @@ module CoolFaker
   end
 end
 
-my_name = CoolFaker::Name.new
+my_name = CoolFaker::Character.new
 
-p my_name.get_name('lib/cool_faker/name.yml')
+p my_name.name('lib/cool_faker/name.yml')
 
 
