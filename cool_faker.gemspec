@@ -6,7 +6,7 @@ require 'cool_faker/version'
 Gem::Specification.new do |spec|
   spec.name          = "cool_faker"
   spec.version       = CoolFaker::VERSION
-  spec.authors       = ["Nicholas Cu & Quentin Devauchelle"]
+  spec.authors       = ["Nicholas Cu & Quentin Devauchelle & Armando Reed & Jamie McKenzie"]
   spec.email         = ["pair+nicholascu.qt-dev@devbootcamp.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}

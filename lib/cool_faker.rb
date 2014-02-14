@@ -14,9 +14,3 @@ module CoolFaker
   end
 
 end
-
-# faker = CoolFaker::Base
-
-# faker.parse('cool_faker/name.yml')
-
-# faker.parse('cool_faker/name.yml')
