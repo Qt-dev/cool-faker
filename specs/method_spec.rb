@@ -4,10 +4,9 @@ require_relative '../lib/name.rb'
 describe CoolFaker::Character, "name class for famous faker" do
 
   describe "name method" do
-  name = CoolFaker::Character.new
+  name = CoolFaker::Character
     it "should return a string" do
-      file = 'lib/cool_faker/name.yml'
-      name.name(file) =~ /\w+/
+      name.name.should be_a String
     end
   end
 

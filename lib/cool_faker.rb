@@ -11,12 +11,12 @@ module CoolFaker
       YAML.load(File.open(file))
     end
 
+    def self.dir
+      File.expand_path(File.dirname(__FILE__))
+    end
+
   end
 
 end
 
-# faker = CoolFaker::Base
-
-# faker.parse('cool_faker/name.yml')
-
-# faker.parse('cool_faker/name.yml')
+require 'name'
