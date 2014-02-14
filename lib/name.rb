@@ -12,3 +12,4 @@ module CoolFaker
 
   end
 end
+
