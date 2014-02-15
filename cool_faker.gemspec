@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = [""]
   spec.summary       = %q{generate a list of real movie character names}
   spec.description   = %q{Perfect for filling in tables to test how program treats data}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Qt-dev/cool-faker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
