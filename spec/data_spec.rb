@@ -51,4 +51,36 @@ describe "The data file" do
       end
     end
   end
+
+  describe "the animals node" do
+    it "should exist" do
+      YAML.load_file(FILE).should include("animals")
+    end
+
+    it "should have at least 15 possible animals" do
+      YAML.load_file(FILE)["animals"].length.should be > 5
+    end
+
+    it "should contain only animals with more than 2 letters" do
+      YAML.load_file(FILE)["animals"].each do |animal|
+        animal.length.should be > 2
+      end
+    end
+  end
+
+  describe "the adjectives node" do
+    it "should exist" do
+      YAML.load_file(FILE).should include("adjectives")
+    end
+
+    it "should have at least 15 possible adjectives" do
+      YAML.load_file(FILE)["adjectives"].length.should be > 5
+    end
+
+    it "should only give one-word adjectives" do
+      YAML.load_file(FILE)["adjectives"].each do |adjective|
+        adjective.split(" ").length.should be 1
+      end
+    end
+  end
 end
