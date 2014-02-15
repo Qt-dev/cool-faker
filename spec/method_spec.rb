@@ -21,7 +21,7 @@ describe CoolFaker::Character, "name class for famous faker" do
       end
 
       it "should select a character from #{movie}" do
-        names[movie].include?(CoolFaker::Character.name_from(movie))
+        names[movie].should include(CoolFaker::Character.name_from(movie))
       end
 
     end
@@ -46,4 +46,17 @@ describe CoolFaker::Team, "team class for famous faker" do
 
   end
 
+  describe "team name method" do
+    it "should return a string" do
+      CoolFaker::Team.name.should be_a String
+    end
+
+    it "should be shorter than 5 words" do
+      CoolFaker::Team.name.split(' ').length.should be < 5
+    end
+
+    it "should be longer than 1 word" do
+      CoolFaker::Team.name.split(' ').length.should be > 1
+    end
+  end
 end
