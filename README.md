@@ -1,6 +1,6 @@
 # CoolFaker
 
-TODO: Write a gem description
+A faker gem that generate famous and fun data !
 
 ## Installation
 
@@ -18,7 +18,45 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+There are 2 parts to this gem :
+
+### Characters
+
+#### Name 
+    CoolFaker::Character.name
+Gives a random name from a famous movie or TV show.
+
+#### Name_from
+
+    CoolFaker::Character.name_from(TITLE)
+Gives a random name from the selected TV show or movie.
+The available options are : 
+
+    monty_python
+    futurama
+    the_simpsons
+    toy_story
+    back_to_the_future
+    the_wizard_of_oz
+    snow_white
+    napolean_dynamite 
+    the_lord_of_the_rings
+    star_wars
+    superman
+    startrek
+    batman
+    sex_and_the_city
+    entourage
+    friends
+
+### Team
+#### Name
+    CoolFaker::Team.name
+Gives a team name generated from one adjective and one animal name. Go 'depressed pandas'!
+
+#### Slogans
+    CoolFaker::Team.slogan
+Gives a Famous quote in less than 140 characters, to use as a slogan.
 
 ## Contributing
 
