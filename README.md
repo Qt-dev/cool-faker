@@ -1,6 +1,6 @@
 # CoolFaker
 
-A faker gem that generate famous and fun data !
+A faker gem that generates famous and fun data !
 
 ## Installation
 
